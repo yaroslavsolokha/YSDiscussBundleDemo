@@ -1,0 +1,34 @@
+{
+  "name" : "ys/discuss-bundle",
+  "description" : "A Discuss bundle",
+  "type" : "symfony-bundle",
+  "authors" : [{
+    "name" : "Yaroslav Solokha",
+    "email" : "yaroslav.solokha@gmail.com"
+  }],
+  "keywords" : [
+    "Blog bundle"
+  ],
+  "license" : [
+    "MIT"
+  ],
+  "require" : {
+    "ys/user-bundle" : "dev-master",
+    "egeloen/ckeditor-bundle": "^5.0"
+  },
+  "repositories" : [{
+    "type" : "vcs",
+    "url" : "https://github.com/yaroslavsolokha/YSUserBundle.git"
+  }],
+  "autoload" : {
+    "psr-0" : {
+      "YS\\BlogBundle" : ""
+    }
+  },
+  "target-dir" : "YS/DiscussBundle",
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "1.0-dev"
+    }
+  }
+}
