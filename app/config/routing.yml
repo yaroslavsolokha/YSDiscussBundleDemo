@@ -4,3 +4,7 @@ app:
 
 ys_user_bundle:
     resource: "@YSUserBundle/Resources/config/routing.yml"
+
+ys_discuss_bundle:
+    resource: "@YSDiscussBundle/Resources/config/routing.yml"
+    prefix:   /discuss

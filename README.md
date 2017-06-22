@@ -59,11 +59,23 @@ $ composer update
 ```
 $ bin/console doctrine:schema:create
 ```
-##### 8. Add import to config.yml
+##### 8. Add routing to routing.yml
 ```
-imports:
-    ...
-    - { resource: "@YSBlogBundle/Resources/config/config.yml" }
+ys_discuss_bundle:
+    resource: "@YSDiscussBundle/Resources/config/routing.yml"
+    prefix:   /discuss
+```
+##### 9. Add to config.yml
+```
+ivory_ck_editor:
+    configs:
+        my_config:
+            toolbar: [ ["Source", "-", "Maximize"] ]
+            uiColor: "#000000"
+```
+##### 10. Install assets
+```
+bin/console assets:install
 ```
         
 

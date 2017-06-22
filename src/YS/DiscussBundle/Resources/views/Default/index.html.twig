@@ -1,0 +1,17 @@
+{% extends 'YSUserBundle::base.html.twig' %}
+
+{% block body %}
+    <div class="main container">
+        {{ form_start(form, { 'action': path('ys_discuss') }) }}
+        <div class="card">
+            <div class="card-content">
+                {{ form_widget(form) }}
+            </div>
+            <div class="card-action">
+                <span class="btn js-back-button-history">Back</span>
+                <input type="submit" class="btn" value="Save" />
+            </div>
+        </div>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

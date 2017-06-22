@@ -1,0 +1,3 @@
+ys_discuss:
+    path:     /
+    defaults: { _controller: YSDiscussBundle:Default:index }

@@ -69,3 +69,9 @@ swiftmailer:
     username: '%mailer_user%'
     password: '%mailer_password%'
     spool: { type: memory }
+
+ivory_ck_editor:
+    configs:
+        my_config:
+            toolbar: [ ["Source", "-", "Maximize"] ]
+            uiColor: "#000000"

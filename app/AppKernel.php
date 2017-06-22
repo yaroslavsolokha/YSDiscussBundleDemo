@@ -28,7 +28,8 @@ class AppKernel extends Kernel
             new Sonata\AdminBundle\SonataAdminBundle(),
             new Ivory\OrderedFormBundle\IvoryOrderedFormBundle(),
             new YS\UserBundle\YSUserBundle(),
-            new YS\DiscussBundle\YSDiscussBundle()
+            new YS\DiscussBundle\YSDiscussBundle(),
+            new Ivory\CKEditorBundle\IvoryCKEditorBundle()
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
